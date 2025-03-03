@@ -2,7 +2,7 @@
 
 # Configuration
 DEPLOYMENT_ENV="Development"      # Deployment environment (used only in Discord message)
-DEPLOYMENTS_DIR="/home/wille/deploy"     # Directory with Docker Compose files (best solution /deployment/<service_name>/docker-compose.yml)
+DEPLOYMENTS_DIR="/home/wille/dev-node"     # Directory with Docker Compose files (best solution /deployment/<service_name>/docker-compose.yml)
 DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/1346253803132813332/FWNXlY6BeJB7MwwplxYjUNx6rtalGQYpvdeZWB_6Xn017D20SNTy9Ff7QuoqFAoTYwyR"                   # Discord Webhook URL (leave empty if you don't want to use it)
 DOCKER_COMPOSE="/usr/bin/docker compose" # Docker Compose binary (try with '-' if it doesn't work)
 GIT="/usr/bin/git"                       # Git binary
