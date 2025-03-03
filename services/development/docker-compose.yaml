@@ -17,6 +17,13 @@ services:
     volumes:
       - redis_data:/data
 
+  nginx:
+    image: nginxdemos/hello
+    container_name: nginx
+    restart: unless_stopped
+    ports:
+      - "80:80"
+
 volumes:
   mongodb_data:
   redis_data:
