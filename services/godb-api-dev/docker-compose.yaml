@@ -18,8 +18,10 @@ services:
       - internal
 
   godb-api:
-    image: willebergh/godb-api:dev-1.0.9
+    image: willebergh/godb-api:0.1
     container_name: godb-api
+    env_file:
+      - .env
     restart: unless-stopped
     ports:
       - "4000:4000"
