@@ -16,7 +16,7 @@ services:
       - internal
 
   godb-api:
-    image: willebergh/godb-api:1.0.9
+    image: willebergh/godb-api:dev-1.0.9
     env_file:
       - .env
     restart: unless-stopped
