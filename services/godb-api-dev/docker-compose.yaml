@@ -1,7 +1,6 @@
 services:
   mongodb:
     image: mongo:8.0
-    container_name: mongodb
     restart: unless-stopped
     volumes:
       - mongodb_data:/data/db
@@ -10,7 +9,6 @@ services:
 
   redis:
     image: redis:latest
-    container_name: redis
     restart: unless-stopped
     volumes:
       - redis_data:/data
@@ -19,7 +17,6 @@ services:
 
   godb-api:
     image: willebergh/godb-api:0.1
-    container_name: godb-api
     env_file:
       - .env
     restart: unless-stopped
